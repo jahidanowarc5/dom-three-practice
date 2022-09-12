@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-semibold text-center mt-5">Lets get some <span class="text-purple-500">moooney</span> </h1>
+    <!-- withdraw deposite balance section -->
+
+    <section class="w-3/4 mx-auto mt-8">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-purple-600 text-white rounded p-8 text-center">
+                <h1 class="text-2xl ">Deposite</h1>
+                <h2 class="text-4xl ">$ <span id="deposite-field">00</span></h2>
+            </div>
+            <div class="bg-green-600 text-white rounded p-8 text-center">
+                <h1 class="text-2xl ">Withdraw</h1>
+                <h2 class="text-4xl ">$ <span id="withdraw-field">00</span> </h2>
+            </div>
+            <div class="bg-blue-600 text-white rounded p-8 text-center">
+                <h1 class="text-2xl ">Balance</h1>
+                <h2 class="text-4xl ">$ <span id="total-balance">00</span> </h2>
+            </div>
+
+        </div>
+    </section>
+    <!-- withdraw and deposite section -->
+    <section class="w-3/4 mx-auto mt-5">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-rose-300 p-8 rounded">
+                <h1 class="text-2xl mb-2">Please deposite</h1>
+                <input  id="deposite-input" class="block border rounded px-2 " type="number" name="" id="" placeholder="Amount you want to deposite">
+                <button onclick="getDepositeInputValue()" id="deposite-btn" class="bg-green-900 mt-4 px-2 rounded text-white text-medium">Deposite</button>
+            </div>
+            <div class="bg-fuchsia-400 p-8 rounded">
+                <h1 class="text-2xl mb-2">Please withdraw</h1>
+                <input id="withdraw-input" class="block border rounded px-2 " type="number" name="" id="" placeholder="Amount you want to withdraw">
+                <button onclick="getWithdrawInputValue()" id="withdraw-btn" class="bg-green-900 mt-4 px-2 rounded text-white text-medium">Withdraw</button>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/different.js"></script>
+</body>
+</html>
